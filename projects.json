@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img": "./src/assets/united-deals.png",
+        "name": "United Deals  E-Commerce",
+        "description": "United Deals is a modern electronics e-commerce platform designed to provide a smooth and user-friendly online shopping experience. The website allows users to browse products, explore categories, search and filter items, view detailed product information, and manage their shopping cart through a responsive and modern interface.",
+        "codeLink": "https://github.com/sydalshghty/united-deals",
+        "linkView": "https://united-deals-phi.vercel.app/",
+        "skills": ["React js", "Redux Toolkit", "React Router", "Tailwind css", "css3"]
+    },
+    {
+        "id": 2,
+        "img": "./src/assets/united-hanger.png",
+        "name": "United Hanger Website",
+        "description": "A responsive corporate website developed for United Hanger Company to showcase products, company information, and customer inquiries. The website provides a professional online presence with dedicated product pages, image galleries, and contact channels.",
+        "codeLink": "https://github.com/sydalshghty/website-united-hanger",
+        "linkView": "https://website-united-hanger.vercel.app",
+        "skills": ["React js", "React Router", "Tailwind css", "css3"]
+    },
+    {
+        "id": 3,
+        "img": "./src/assets/dashboard-united-hanger.png",
+        "name": "United Hanger Dashboard",
+        "description": "United Hanger Dashboard is an administrative dashboard designed to manage products, monitor business operations, and provide a centralized interface for handling company data through a modern and responsive user experience.",
+        "codeLink": "https://github.com/sydalshghty/dashboard-unitedhangers",
+        "linkView": "https://dashboard-unitedhangers.vercel.app/",
+        "skills": ["React js", "React Router", "css3", "js"]
+    }
+]
