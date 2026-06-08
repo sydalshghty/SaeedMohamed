@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { Code,Eye } from "lucide-react";
-import productImgTest from "../assets/united-deals.png";
 import allProjects from "../../projects.json";
 import { motion } from "framer-motion";
 function Projects(){
@@ -11,10 +10,6 @@ function Projects(){
             initial={{opacity: 0, y: 200}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 0.6}}
-            viewport={{
-                once: true,
-                amount: 0.3
-            }}
             className="container w-full h-full">
                 <div className="col-heading w-full flex justify-between items-end">
                     <div>

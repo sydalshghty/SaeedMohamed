@@ -219,7 +219,9 @@ nav .container ul li.active a{
   .hero-section,
   .technical-skils,
   .featured-projects,
-  .code-section{
+  .code-section,
+  .contact-home,
+  .footer{
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -228,8 +230,41 @@ nav .container ul li.active a{
   .hero-section,
   .technical-skils,
   .featured-projects,
-  .code-section{
+  .code-section,
+  .contact-home,
+  .footer{
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
+/*Start Contact-home Style*/
+@media (max-width: 520px){
+  .contact-home .container .content-section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact-home .container .content-section h1{
+    font-size: 25px;
+  }
+  .contact-home .container .content-section p{
+    font-size: 12px;
+  }
+  .contact-home .container .content-section .btns-contact a{
+    width: 130px;
+    height: 45px;
+  }
+}
+
+/*End Contact-home Style*/
+/*Start Footer Style*/
+
+@media (max-width: 650px){
+  .footer .content-footer .container{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+}
+/*End Footer Style*/
