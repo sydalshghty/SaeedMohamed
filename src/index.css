@@ -268,3 +268,23 @@ nav .container ul li.active a{
 }
 }
 /*End Footer Style*/
+
+/*Start Projects-Page Style*/
+.all-projects .container ul li.active{
+  background-color: #494BD6;
+  color: white;
+  border: none !important;
+}
+html.dark .all-projects .container ul li.active{
+  background-color: #C0C1FF;
+  color: #1000A9;
+}
+@media (max-width: 520px){
+  .all-projects .container .content-text h1{
+    font-size: 20px;
+  }
+  .all-projects .container .content-text p{
+    font-size: 12px;
+  }
+}
+/*End Projects-Page Style*/

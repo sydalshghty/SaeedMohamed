@@ -1,6 +1,11 @@
-function ProjectsPage(){
-    return(
-        <h1>projects, page</h1>
+import AllProjects from "../components/all-projects";
+function ProjectsPage() {
+    return (
+        <>
+            <div className="projects-page mt-16">
+                <AllProjects />
+            </div>
+        </>
     )
 }
 export default ProjectsPage;

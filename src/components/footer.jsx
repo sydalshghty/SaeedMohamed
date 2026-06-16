@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
-function Footer(){
-    return(
-        <motion.section 
-        initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0}}
-        transition={{duration: 0.6}}
-        className="footer bg-[#F8FAFC] dark:bg-[#031427] pt-11 pb-11">
+function Footer() {
+    return (
+        <section
+            className="footer bg-[#F8FAFC] dark:bg-[#031427] pt-11 pb-11">
             <div className="content-footer w-full bg-white dark:bg-[#020617] h-37.5 border-t border-b border-[#E2E8F0] dark:border-[#1E293B]">
                 <div className="container w-full h-full flex justify-between items-center">
                     <div className="col-div">
@@ -14,7 +11,7 @@ function Footer(){
                     </div>
                     <ul className="flex gap-8 items-center">
                         <li>
-                                <a href="https://www.linkedin.com/in/saeed-mohamed-668992339/" target="_blank" className="text-[12px] text-[#64748B]">LINKEDIN</a>
+                            <a href="https://www.linkedin.com/in/saeed-mohamed-668992339/" target="_blank" className="text-[12px] text-[#64748B]">LINKEDIN</a>
                         </li>
                         <li>
                             <a href="https://github.com/sydalshghty?tab=repositories" target="_blank" className="text-[12px] text-[#64748B]">GITHUB</a>
@@ -25,7 +22,7 @@ function Footer(){
                     </ul>
                 </div>
             </div>
-        </motion.section>
+        </section>
     )
 }
 export default Footer;

@@ -1,4 +1,4 @@
-import { Routes,Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Whatsapp from "./components/whatsapp";
 import Home from "./pages/Home";
@@ -7,22 +7,22 @@ import ContactPage from "./pages/Contact";
 import { useEffect } from "react";
 function App() {
   const savetheme = localStorage.getItem("theme");
-  if(savetheme === "dark"){
+  if (savetheme === "dark") {
     document.documentElement.classList.add("dark")
-  }else{
+  } else {
     document.documentElement.classList.remove("dark")
   }
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="projects" element={<ProjectsPage/>} />
-        <Route path="contact" element={<ContactPage/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="contact" element={<ContactPage />} />
       </Routes>
-      <Whatsapp/>
+      <Whatsapp />
     </>
   )
 }
-export default App
+export default App;
