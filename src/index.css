@@ -275,6 +275,27 @@ nav .container ul li.active a{
   color: white;
   border: none !important;
 }
+.all-projects .container .all-projects .col-project .view-code-icon{
+  display: none;
+}
+.all-projects .container .col-project .main-content-project,
+.all-projects .container .col-project .col-desc-view{
+  transition: display 0.5s ease;
+}
+.all-projects .container .col-project .col-desc-view{
+  display: none;
+}
+.all-projects .container .col-project:hover .main-content-project{
+  display: none;
+}
+.all-projects .container .col-project:hover .col-desc-view{
+  display: block;
+}
+@media (max-width: 768px){
+  .all-projects .container .all-projects .col-project .view-code-icon{
+    display: block;
+  }
+}
 html.dark .all-projects .container ul li.active{
   background-color: #C0C1FF;
   color: #1000A9;
