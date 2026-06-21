@@ -13,7 +13,7 @@ function Navbar() {
     const links = [
         { id: 1, name: "home", icon: House, href: "/" },
         { id: 2, name: "projects", icon: FolderKanban, href: "projects" },
-        { id: 3, name: "contact", icon: Mail, href: "contact" }
+        { id: 3, name: "contact", icon: Mail, href: "#" }
     ]
 
     const socialMedia = [
