@@ -372,16 +372,4 @@ html.dark .all-projects-section .container ul li.active{
     margin-top: 0px !important;
   }
 }
-@media (min-width: 520px){
-  /*.all-projects-section .container .col-project .main-content-project a{
-    display: none;
-  }*/
-  .all-projects-section .container .col-project:hover .main-content-project{
-  display: none;
-}
-.all-projects-section .container .col-project:hover .col-desc-view{
-  display: block;
-}
-}
-
 /*End Projects-Page Style*/
