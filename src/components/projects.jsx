@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
-import { Code, Eye } from "lucide-react";
+import { Code, Eye, ArrowRight } from "lucide-react";
 import allProjects from "../../projects.json";
 import { motion } from "framer-motion";
 function Projects() {
@@ -26,32 +26,30 @@ function Projects() {
                         <>
                             {allProjects.map((project, index) => {
                                 return (
-                                    <div key={project.id} className="col-project shadow rounded-xl w-88.75 dark:bg-[#1E293B]">
-                                        <div className="col-img-product w-full h-48 rounded-xl">
-                                            <img src={project.img} className="w-full h-full rounded-t-xl object-contain" alt="img-product" />
-                                        </div>
-                                        <div className="all-information-product p-6 flex flex-col gap-5">
-                                            <div className="title-view-col w-full flex justify-between items-center">
-                                                <h2 className="text-[20px] font-bold text-[#0F172A] capitalize dark:text-white">{project.name}</h2>
-                                                <div className="col-icons flex items-center gap-2">
-                                                    <a href={project.codeLink} target="_blank">
-                                                        <Code className="text-[15px] text-[#94A3B8] cursor-pointer" />
-                                                    </a>
-                                                    <a href={project.linkView} target="_blank">
-                                                        <Eye className="text-[15px] text-[#94A3B8] cursor-pointer" />
-                                                    </a>
+                                    <div key={project.id} className="col-project w-98.5 h-84.25 border border-[#E2E8F0] dark:border-[#464554] rounded-xl">
+                                        <div className="main-content-project flex flex-col items-start justify-start gap-4">
+                                            <div className="content-img-product relative w-full h-55 ">
+                                                <div className="col-img-product absolute w-full h-full top-0 left-0  rounded-t-lg">
+                                                    <img src={project.img} alt="img-product" className=" rounded-t-lg" />
                                                 </div>
                                             </div>
-                                            <p className="p-description text-[14px] text-[#475569] dark:text-[#C7C4D7]">
-                                                {project.description}
-                                            </p>
-                                            <ul className="col-skills flex flex-wrap gap-2">
+                                            <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5">
+                                                <a href={project.codeLink} target="_blank">
+                                                    <Code className="text-[#94A3B8]" />
+                                                </a>
+                                                <a href={project.linkView}>
+                                                    <Eye className="text-[#94A3B8]" />
+                                                </a>
+                                            </div>
+                                            <ul className="skills-project pl-4 pr-4 flex gap-2">
                                                 {project.skills.map((skill, index) => {
                                                     return (
-                                                        <li key={skill} className="w-fit h-5 pt-0.5 pb-0.5 pl-2 pr-2 bg-[#EEF2FF] rounded text-[#4F46E5] text-[12px] dark:text-[#CBD5E1] dark:bg-[#475569] uppercase">{skill}</li>
+                                                        <li key={skill} className="w-fit h-6 pl-2 pr-2 pt-1 pb-1 rounded bg-[#EEF2FF] dark:text-[#C7C4D7] dark:bg-[#464554] flex justify-center items-center text-[10px] font-bold text-[#4F46E5] uppercase">{skill}</li>
                                                     )
-                                                })}
+                                                })
+                                                }
                                             </ul>
+                                            <h2 className="title-project pl-4 pr-4 text-2xl font-bold text-[#0F172A] capitalize  dark:text-white">{project.name}</h2>
                                         </div>
                                     </div>
                                 )

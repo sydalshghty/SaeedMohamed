@@ -55,6 +55,14 @@ function AllProjects() {
                                                         <img src={project.img} alt="img-product" className=" rounded-t-lg" />
                                                     </div>
                                                 </div>
+                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5">
+                                                    <a href={project.codeLink} target="_blank">
+                                                        <Code className="text-[#94A3B8]" />
+                                                    </a>
+                                                    <a href={project.linkView}>
+                                                        <Eye className="text-[#94A3B8]" />
+                                                    </a>
+                                                </div>
                                                 <ul className="skills-project pl-4 pr-4 flex gap-2">
                                                     {project.skills.map((skill, index) => {
                                                         return (
@@ -64,17 +72,6 @@ function AllProjects() {
                                                     }
                                                 </ul>
                                                 <h2 className="title-project pl-4 pr-4 text-2xl font-bold text-[#0F172A] capitalize  dark:text-white">{project.name}</h2>
-                                                <a href={project.linkView} target="_blank" className="flex items-center gap-1 pl-4 pr-4">
-                                                    <p className="text-[12px] text-[#4F46E5] uppercase dark:text-[#C0C1FF]">view project</p>
-                                                    <ArrowRight className="text-[#4F46E5] dark:text-[#C0C1FF] w-5" />
-                                                </a>
-                                            </div>
-                                            <div className="col-desc-view p-6">
-                                                <p className="text-[15px] mb-2 dark:text-white">{project.description}</p>
-                                                <a href={project.linkView} target="_blank" className="flex items-center gap-1">
-                                                    <p className="text-[16px] text-[#4F46E5] uppercase dark:text-[#C0C1FF]">view project</p>
-                                                    <ArrowRight className="text-[#4F46E5] dark:text-[#C0C1FF]" />
-                                                </a>
                                             </div>
                                         </div>
                                     )
