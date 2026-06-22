@@ -55,7 +55,7 @@ function AllProjects() {
                                                         <img src={project.img} alt="img-product" className=" rounded-t-lg" />
                                                     </div>
                                                 </div>
-                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5">
+                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5 z-50">
                                                     <a href={project.codeLink} target="_blank">
                                                         <Code className="text-[#94A3B8]" />
                                                     </a>
@@ -93,7 +93,7 @@ function AllProjects() {
                                                         <img src={project.img} alt="img-product" className=" rounded-t-lg" />
                                                     </div>
                                                 </div>
-                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5">
+                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5 z-50">
                                                     <a href={project.codeLink} target="_blank">
                                                         <Code className="text-[#94A3B8]" />
                                                     </a>
@@ -131,7 +131,7 @@ function AllProjects() {
                                                         <img src={project.img} alt="img-product" className=" rounded-t-lg" />
                                                     </div>
                                                 </div>
-                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5">
+                                                <div className="col-icons w-full  flex justify-end gap-2 pr-4 -mt-7.5 z-50">
                                                     <a href={project.codeLink} target="_blank">
                                                         <Code className="text-[#94A3B8]" />
                                                     </a>
