@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 function Footer() {
     return (
         <section
-            className="footer bg-[#F8FAFC] dark:bg-[#000F21] pt-11 pb-11">
-            <div className="content-footer w-full bg-white dark:bg-[#020617] h-37.5 border-t border-b border-[#E2E8F0] dark:border-[#1E293B]">
+            className="footer bg-[#F8FAFC] dark:bg-[#000F21]">
+            <div className="content-footer w-full bg-white dark:bg-[#020617] h-28.25  border-b border-[#E2E8F0] dark:border-[#1E293B]">
                 <div className="container w-full h-full flex justify-between items-center">
                     <div className="col-div">
                         <h2 className="text-[18px] font-bold text-[#0F172A] dark:text-white capitalize">saeed mohamed</h2>
